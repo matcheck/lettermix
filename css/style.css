@@ -1,0 +1,204 @@
+@import "basscss.min.css";
+/* Colors */
+/* Font */
+/* General */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  font-family: "adelle-sans", sans-serif;
+}
+h1 {
+  font-family: "cubano", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+h3 {
+  color: #ffffff;
+  font-weight: normal;
+}
+.page-title span:nth-child(1) {
+  letter-spacing: 0.1rem;
+}
+p {
+  line-height: 1.7;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-cover {
+  background-size: cover;
+}
+.mix {
+  -webkit-border-radius: 0.25rem;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0.25rem;
+  -moz-background-clip: padding;
+  border-radius: 0.25rem;
+  background-clip: padding-box;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  /* 56.25% */
+
+}
+.bar-control {
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-border-bottom-left-radius: 0.25rem;
+  -moz-border-radius-bottomleft: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  -webkit-border-bottom-right-radius: 0.25rem;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomright: 0.25rem;
+  -moz-background-clip: padding;
+  border-bottom-right-radius: 0.25rem;
+  background-clip: padding-box;
+}
+.button-geo .geo-16 {
+  position: relative;
+  top: 2px;
+}
+.button-geo .geo-24 {
+  position: relative;
+  top: 4px;
+}
+.geo-white {
+  fill: #fff;
+}
+.geo-16 {
+  width: 16px;
+  height: 16px;
+}
+.geo-24 {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 767px) {
+  .geo-24 {
+    width: 16px;
+    height: 16px;
+  }
+}
+@-webkit-keyframes popin {
+  0% {
+    -webkit-transform: scale(0.2);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes popin {
+  0% {
+    transform: scale(0.2);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.anim-popin {
+  -webkit-animation: popin .1s;
+  animation: popin .1s;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: transform .1s ease;
+}
+.anim-popin:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.track-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .track-title {
+    float: none;
+  }
+}
+a.view-soundcloud {
+  color: #ffffff;
+  margin: 0.7rem 1rem 0 1rem;
+  font-size: 1.25rem;
+  opacity: 0.6;
+  float: right;
+}
+@media screen and (max-width: 767px) {
+  a.view-soundcloud {
+    float: left;
+    margin: 0;
+    padding: 0 0 1rem 0;
+  }
+}
+a.view-soundcloud:hover {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #ffffff;
+  opacity: 1;
+}
+.bar-progress {
+  opacity: 0.15;
+  background-color: #333333;
+  cursor: pointer;
+}
+.bar-progress-in {
+  opacity: 1;
+  background-color: #ffffff;
+}
+.wrap-mix {
+  padding: 5rem 2rem;
+}
+@media screen and (max-width: 60em) {
+  .wrap-mix {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+.colophon {
+  padding: 5rem 2rem;
+}
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1s;
+  -moz-animation: fadeIn ease-in 1s;
+  -o-animation: fadeIn ease-in 1s;
+  animation: fadeIn ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.fadeIn-second {
+  opacity: 0;
+  -webkit-animation: fadeIn-second ease-in 1s;
+  -moz-animation: fadeIn-second ease-in 1s;
+  -o-animation: fadeIn-second ease-in 1s;
+  animation: fadeIn-second ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes fadeIn{ 0%{opacity:0;} 30%{opacity:0;} 60%{opacity:1;} 100%{opacity:1;}}
+@-moz-keyframes fadeIn{ 0%{opacity:0;} 30%{opacity:0;} 60%{opacity:1;} 100%{opacity:1;}}
+@-o-keyframes fadeIn{ 0%{opacity:0;} 30%{opacity:0;} 60%{opacity:1;} 100%{opacity:1;}}
+@keyframes fadeIn{ 0%{opacity:0;} 30%{opacity:0;} 60%{opacity:1;} 100%{opacity:1;};
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes fadeIn-second{ 0%{opacity:0;} 60%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fadeIn-second{ 0%{opacity:0;} 60%{opacity:0;} 100%{opacity:1;}}
+@-o-keyframes fadeIn-second{ 0%{opacity:0;} 60%{opacity:0;} 100%{opacity:1;}}
+@keyframes fadeIn-second{ 0%{opacity:0;} 60%{opacity:0;} 100%{opacity:1;};
+}

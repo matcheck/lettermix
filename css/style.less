@@ -1,0 +1,197 @@
+@import "lesshat.less";
+@import "basscss.min.css";
+
+/* Colors */
+@white: #fff;
+@dark-gray: #333333;
+
+/* Font */
+
+/* General */
+
+html {
+  @media screen and (max-width: 767px) {font-size: 75%;} 
+}
+
+body {
+  font-family: "adelle-sans",sans-serif;
+}
+
+
+h1 {
+  font-family: "cubano",sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  padding-left: 1rem; padding-right: 1rem;
+}
+
+h3 {
+  color: @white;
+  font-weight: normal;
+}
+
+.page-title {
+  span:nth-child(1){
+    letter-spacing: 0.1rem;
+  }
+  span:nth-child(2){
+
+  }
+  span:nth-child(3){
+
+  }
+  span:nth-child(4){
+
+  }
+  span:nth-child(5){
+
+  }
+  span:nth-child(6){
+
+  }
+  span:nth-child(7){
+
+  }
+  span:nth-child(8){
+
+  }
+}
+
+p {
+  line-height: 1.7;
+}
+
+
+.bg-center {
+	background-position: center;
+}
+
+.bg-cover {
+	background-size: cover;
+}
+
+.mix {
+	.border-radius(0.25rem);
+  width: 100%;
+  height:0;
+  padding-bottom: 70%; /* 56.25% */
+}
+
+.bar-control {
+	background-color: rgba(0, 0, 0, 0.25);
+	.border-bottom-left-radius(0.25rem);
+	.border-bottom-right-radius(0.25rem);
+}
+
+.button-geo {
+  .geo-16 {
+    position: relative;
+    top: 2px; 
+  }
+  .geo-24 {
+    position: relative;
+    top: 4px;
+  }
+}
+
+.geo-white {
+	fill: #fff;
+}
+
+.geo-16 { width: 16px; height: 16px; }
+.geo-24 {
+  width: 24px;
+  height: 24px;
+  @media screen and (max-width: 767px) {width: 16px; height: 16px;} 
+}
+
+
+@-webkit-keyframes popin {
+  0% { -webkit-transform: scale(.2); }
+  80% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); }
+} 
+@keyframes popin {
+  0% { transform: scale(.2); }
+  80% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+} 
+.anim-popin {
+  -webkit-animation: popin .1s;
+  animation: popin .1s;
+  -webkit-transition: -webkit-transform .1s ease;
+  transition: transform .1s ease;
+}
+
+.anim-popin:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.track-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  @media screen and (max-width: 767px) {float:none;} 
+}
+
+
+a.view-soundcloud {
+  &{
+    color: @white;
+    margin: 0.7rem 1rem 0 1rem;
+    font-size: 1.25rem;
+    opacity: 0.6; 
+    float:right;  
+     @media screen and (max-width: 767px) {float:left; margin:0; padding: 0 0 1rem 0;} 
+  }
+  &:hover {
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid @white;
+    opacity: 1;    
+  }
+}
+
+.bar-progress {
+  opacity: 0.15;
+  background-color: @dark-gray;
+  cursor: pointer;
+}
+
+.bar-progress-in {
+  opacity: 1;
+  background-color: @white;
+}
+
+.wrap-mix {
+  padding: 5rem 2rem;
+  @media screen and (max-width: 60em) {padding: 2rem 2rem 2rem 2rem;}
+}
+
+.colophon {
+  padding: 5rem 2rem;
+}
+
+.fadeIn {
+  opacity:0;
+  .animation(fadeIn ease-in 1s);
+  .animation-fill-mode(forwards);
+}
+
+.fadeIn-second {
+  opacity:0;
+  .animation(fadeIn-second ease-in 1s);
+  .animation-fill-mode(forwards);
+}
+
+
+.keyframes(~'fadeIn, 0%{opacity:0;} 30%{opacity:0;} 60%{opacity:1;} 100%{opacity:1;}');
+
+.keyframes(~'fadeIn-second, 0%{opacity:0;} 60%{opacity:0;} 100%{opacity:1;}');
+
+
+
+
